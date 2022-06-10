@@ -1,10 +1,10 @@
 import torch
 
-from utils import add_spaces, score_kenlm_model
+from utils import add_spaces, get_kenlm_model, kenlm_model_perplexity, kenlm_model_oov_fraction
 
 
 def main():
-    score_kenlm_model('very simple sentance .', 'kenlm/lm/test.arpa')
+    print("All done.")
 
 
 if __name__ == "__main__":
